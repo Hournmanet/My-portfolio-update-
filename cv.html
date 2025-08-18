@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Hourn Manet(Den)</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --bg-alt: #0f0f0f;
+        --text: #ffffff;
+        --muted: #cccccc;
+        --primary: #ff6b35;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 12px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .brand {
+        font-weight: 700;
+      }
+      .actions {
+        display: flex;
+        gap: 8px;
+      }
+      .btn {
+        appearance: none;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.2s ease;
+      }
+      .btn-primary {
+        background: var(--primary);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        transform: translateY(-1px);
+      }
+      .btn-ghost {
+        background: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+      }
+      .btn-ghost:hover {
+        background: #fff;
+        color: #0a0a0a;
+        transform: translateY(-1px);
+      }
+      .content {
+        flex: 1;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .resume-frame {
+        width: min(100%, 1000px);
+        background: var(--bg-alt);
+        border-radius: 12px;
+        padding: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+      .resume-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 16px;
+        font-size: 0.9rem;
+      }
+    </style>
+    <script>
+      function goBack() {
+        // Navigate back to portfolio
+        window.location.href = "index.html";
+      }
+      function downloadCV() {
+        const link = document.createElement("a");
+        link.href = "assets/cv.jpg";
+        link.download = "Hourn-Manet-Den-CV.jpg";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Resume</div>
+      <div class="actions">
+        <button class="btn btn-ghost" onclick="goBack()">
+          Back to Portfolio
+        </button>
+        <button class="btn btn-primary" onclick="downloadCV()">
+          Download CV
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="resume-frame">
+        <img
+          src="assets/cv.jpg"
+          alt="Resume - Hourn Manet(Den)"
+          class="resume-img"
+        />
+      </div>
+    </main>
+
+    <footer class="footer">Hourn Manet(Den) • CV</footer>
+  </body>
+</html>

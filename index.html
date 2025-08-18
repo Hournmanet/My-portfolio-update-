@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hourn Manet(Den) - Software Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Hourn Manet(Den)</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contacts</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hello.</h1>
+          <div class="hero-subtitle">
+            <div class="orange-line"></div>
+            <h2>I'm Hourn Manet(Den)</h2>
+          </div>
+          <h1 class="hero-role">Software Developer</h1>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">Got a project?</button>
+            <button class="btn btn-secondary" id="resume-btn">My resume</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-container">
+            <div class="glow-circle"></div>
+            <div class="profile-carousel">
+              <img
+                src="assets/profile.jpg"
+                alt="Hourn Manet(Den)"
+                class="profile-image active"
+                loading="lazy"
+              />
+              <img
+                src="assets/profile2.jpg"
+                alt="Hourn Manet(Den)"
+                class="profile-image"
+                loading="lazy"
+              />
+            </div>
+            <div class="carousel-arrows">
+              <button class="arrow-btn" id="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="arrow-btn" id="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-bar">
+        <div class="skills-container">
+          <span class="skill">HTML</span>
+          <span class="skill">CSS</span>
+          <span class="skill">Javascript</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">React</span>
+          <span class="skill">Git</span>
+          <span class="skill">Github</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="services">
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Website Development</h3>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>App Development</h3>
+          </div>
+          <div class="service-item">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3>Website Hosting</h3>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2 class="section-title">About me</h2>
+          <p class="about-text">
+            I started my software journey from photography. Through that, I
+            learned to love the process of creating from scratch. Since then,
+            this has led me to software development as it fulfills my love for
+            learning and building things.
+          </p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3 class="stat-number">120+</h3>
+              <p class="stat-label">Completed Projects</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">95%</h3>
+              <p class="stat-label">Client satisfaction</p>
+            </div>
+            <div class="stat-item">
+              <h3 class="stat-number">10+</h3>
+              <p class="stat-label">Years of experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="projects-container">
+        <h2 class="section-title">
+          Projects
+          <div class="orange-line-vertical"></div>
+        </h2>
+
+        <div class="project-grid">
+          <!-- Project 1: Battleship -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Battleship</h3>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <p class="project-description">
+                Used components of Javascript to implement basic data structures
+                through the game of Battleship. Used a terminal to display ships
+                and tracked where ships are hit or missed.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">View Github</a>
+                <a href="#" class="btn btn-secondary"
+                  >View project <i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="code-snippet">
+                <div class="terminal-header">
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-dot"></span>
+                </div>
+                <div class="terminal-content">
+                  <p>Hit!</p>
+                  <p>Miss!</p>
+                  <p>You sunk a Cruiser.</p>
+                  <p>There are 4 ships left!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Movie Titles API -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Movie Titles API</h3>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">Version control</span>
+              </div>
+              <p class="project-description">
+                Uses a public movie API to build a collection movie list that
+                sorts from A to Z or vice versa. It also counts how many movies
+                in each container and adds user's favorite movies into another
+                container.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">View Github</a>
+                <a href="#" class="btn btn-secondary"
+                  >View project <i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="movie-posters">
+                <img
+                  src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=150&h=200&fit=crop"
+                  alt="The Godfather"
+                  class="movie-poster"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=150&h=200&fit=crop"
+                  alt="Top Gun: Maverick"
+                  class="movie-poster"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Javascript Calculator -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Javascript Calculator</h3>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">Javascript</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <p class="project-description">
+                Uses simple algorithm concepts in Javascript to produce an
+                arithmetic result in a terminal.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">View Github</a>
+                <a href="#" class="btn btn-secondary"
+                  >View project <i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="code-snippet">
+                <div class="terminal-header">
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-dot"></span>
+                  <span class="terminal-dot"></span>
+                </div>
+                <div class="terminal-content">
+                  <p>console.log(result);</p>
+                  <p>if (operation === '+') {</p>
+                  <p>return a + b;</p>
+                  <p>} else if (operation === '-') {</p>
+                  <p>return a - b;</p>
+                  <p>}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: SaaS Landing Page -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">SaaS Landing Page</h3>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+              <p class="project-description">
+                Used HTML concepts such as creating a form and a basic skeleton.
+                It also used components of both the grid and flexbox elements to
+                produce a landing page.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary">View Github</a>
+                <a href="#" class="btn btn-secondary"
+                  >View project <i class="fas fa-external-link-alt"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="landing-page-preview">
+                <div class="preview-header">
+                  <span class="preview-logo">Front</span>
+                  <div class="preview-nav">
+                    <span>HOME</span>
+                    <span>FEATURES</span>
+                    <span>LEARN</span>
+                    <span>PRICING</span>
+                    <span>HIRE US</span>
+                    <span class="preview-cta">Buy Now</span>
+                  </div>
+                </div>
+                <div class="preview-content">
+                  <h3>Empowering teams with the freedom</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-header">
+            <div class="orange-line"></div>
+            <h3>Contacts</h3>
+          </div>
+          <h2 class="contact-title">Have a project?</h2>
+          <h2 class="contact-subtitle">Let's talk!</h2>
+          <button class="btn btn-primary">Submit</button>
+        </div>
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <h3>Hourn Manet(Den)</h3>
+        <p>Designed with love, all right reserved for Hourn Manet(Den).</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
